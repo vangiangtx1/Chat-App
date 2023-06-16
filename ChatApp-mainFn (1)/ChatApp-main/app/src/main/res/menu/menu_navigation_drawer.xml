@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/icon_chats"
+            android:title="@string/message" />
+        <item
+            android:id="@+id/nav_friend"
+            android:icon="@drawable/icon_friends"
+            android:title="@string/friend" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/icon_username"
+            android:title="@string/user" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/icon_calls"
+            android:title="@string/call" />
+    </group>
+    <item android:title="@string/conmunication">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/icon_share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/icon_send"
+                android:title="@string/send_feedback" />
+        </menu>
+    </item>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/icon_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

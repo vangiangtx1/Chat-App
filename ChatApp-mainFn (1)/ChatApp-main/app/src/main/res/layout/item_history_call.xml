@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatarItemHistoryCall"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_avatar" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvItemHistoryCallName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewStatusCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_callmake" />
+
+                <TextView
+                    android:id="@+id/tvCallTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="@string/time_history_call"
+                    android:maxLines="1"
+                    android:textColor="@color/slateBlue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageViewTypeCall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_video_cam"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnMoreVertHistoryCall"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon_more_vert" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

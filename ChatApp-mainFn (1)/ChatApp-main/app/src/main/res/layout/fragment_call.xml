@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.CallFragment">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/action_searchCall"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/frame_search"
+            app:queryHint="@string/search"
+            app:searchHintIcon="@drawable/icon_search"
+            app:searchIcon="@drawable/icon_search" />
+        <Button
+            android:id="@+id/btnDeleteAllCall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/icon_delete02"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListCallHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

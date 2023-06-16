@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/historyCallMenu_viewProfile"
+        android:icon="@drawable/icon_username"
+        android:title="@string/view_profile" />
+    <item android:id="@+id/historyCallMenu_chat"
+        android:title="@string/send_message"/>
+    <item
+        android:id="@+id/historyCallMenu_voiceCall"
+        android:title="@string/voiceCall" />
+    <item
+        android:id="@+id/historyCallMenu_videoCall"
+        android:title="@string/videoCall" />
+    <item
+        android:id="@+id/historyCallMenu_delete"
+        android:title="@string/clear_history_call" />
+
+</menu>

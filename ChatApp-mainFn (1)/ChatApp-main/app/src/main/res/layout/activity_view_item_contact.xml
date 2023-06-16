@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.ViewItemContactActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:theme="@style/AppTheme.Toolbar"
+        android:id="@+id/toolbar_singleContact"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civAvatarSingleContact"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/tvDescribeSingleContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="20dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/gunmetal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/icon_username" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvUserNameSingleContact"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/frame_inputdata"
+                android:gravity="center_vertical"
+                android:textColor="@color/slateBlue"
+                android:textSize="15sp"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/icon_email" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEmailSingleContact"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/frame_inputdata"
+                android:gravity="center_vertical"
+                android:textColor="@color/slateBlue"
+                android:textSize="15sp"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSendFriendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_button"
+        android:text="@string/add_friend"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/btnCancelSendFriendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="80dp"
+        android:background="@drawable/background_button"
+        android:text="@string/cancel_request"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>

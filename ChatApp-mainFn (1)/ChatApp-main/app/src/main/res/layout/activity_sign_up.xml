@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login.SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/background_login"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_message_24"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/email"
+                android:textColor="@color/gunmetal"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtSignUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/frame_inputdata"
+                android:hint="@string/enterEmail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/slateBlue"
+                android:textColorHint="@color/slateBlue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/username"
+                android:textColor="@color/gunmetal"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/frame_inputdata"
+                android:hint="@string/enterUserName"
+                android:inputType="textPersonName"
+                android:textColor="@color/slateBlue"
+                android:textColorHint="@color/slateBlue"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/gender"
+                android:textColor="@color/gunmetal"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="16dp">
+                <RadioButton
+                    android:id="@+id/signUpRadMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/man"
+                    android:textColor="@color/slateBlue"
+                    android:textSize="15sp"/>
+                <RadioButton
+                    android:id="@+id/signUpRadWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/woman"
+                    android:textColor="@color/slateBlue"
+                    android:textSize="15sp"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/password"
+                android:textColor="@color/gunmetal"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtSignUpPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/frame_inputdata"
+                    android:hint="@string/enterPassword"
+                    android:inputType="textPassword"
+                    android:textColor="@color/slateBlue"
+                    android:textColorHint="@color/slateBlue"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivSignUpPasswordVisible"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/edtSignUpPassword"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:src="@drawable/icon_eye" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/confirmPassword"
+                android:textColor="@color/gunmetal"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/frame_inputdata"
+                    android:hint="@string/enterPassword"
+                    android:inputType="textPassword"
+                    android:textColor="@color/slateBlue"
+                    android:textColorHint="@color/slateBlue"
+                    android:textSize="15sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivSignUpConfirmPasswordVisible"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/edtConfirmPassword"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:src="@drawable/icon_eye" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="40.5dp"
+                android:background="@drawable/background_button"
+                android:text="@string/signUp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <View
+                android:layout_width="85dp"
+                android:layout_height="0.5dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@color/slateBlue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="@string/signUpWith"
+                android:textColor="@color/gunmetal"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="85dp"
+                android:layout_height="0.5dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@color/slateBlue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/ivGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@color/pale_lavender"
+                android:padding="8dp"
+                android:src="@drawable/ic_google" />
+
+            <ImageButton
+                android:id="@+id/ivFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:background="@color/pale_lavender"
+                android:padding="8dp"
+                android:src="@drawable/ic_facebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã có tài khoản?"
+                android:textColor="@color/slateBlue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvClickToSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:clickable="true"
+                android:text="@string/signIn"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
